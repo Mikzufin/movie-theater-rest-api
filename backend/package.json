@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-mysql-backend",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "Mikko Haapa-aho",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js -w src --exec babel-node",
+    "lint:es": "eslint src",
+    "test": "yarn lint:es",
+    "test:watch": "nodemon -w src --exec 'yarn test'"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mysql2": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^2.0.1"
+  }
+}
